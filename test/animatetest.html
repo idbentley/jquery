@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Adminate tests</title>
+<style rel='stylesheet'>
+    span {white-space: nowrap; display: none; }
+</style>
+<script src="data/include_js.php"></script>
+</head>
+<body>
+
+    <span>Lorem ipusm</span>
+    <button id='hide'>hide</button>
+    <button id='show'>show</button>
+    <script>
+    $(function(){
+        function hide() {
+            $("span").animate({width: "hide"}, 2000);
+        }
+        function show() {
+            $("span").animate({width: "show"}, 2000);
+        }
+
+        $('#hide').on('click', hide);
+        $('#show').on('click', show); 
+    });
+    </script>
+</body>
+</html>
